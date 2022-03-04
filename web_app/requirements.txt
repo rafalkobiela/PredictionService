@@ -30,20 +30,43 @@ idna==3.3
     # via
     #   anyio
     #   requests
+joblib==1.1.0
+    # via scikit-learn
 mako==1.1.6
     # via alembic
 markupsafe==2.1.0
     # via mako
+numpy==1.22.2
+    # via
+    #   pandas
+    #   scikit-learn
+    #   scipy
+pandas==1.4.1
+    # via -r requirements.in
 psycopg2-binary==2.9.3
     # via -r requirements.in
 pydantic==1.9.0
     # via fastapi
+python-dateutil==2.8.2
+    # via pandas
 python-dotenv==0.19.2
     # via uvicorn
+python-multipart==0.0.5
+    # via -r requirements.in
+pytz==2021.3
+    # via pandas
 pyyaml==6.0
     # via uvicorn
 requests==2.27.1
     # via -r requirements.in
+scikit-learn==1.0.2
+    # via -r requirements.in
+scipy==1.8.0
+    # via scikit-learn
+six==1.16.0
+    # via
+    #   python-dateutil
+    #   python-multipart
 sniffio==1.2.0
     # via anyio
 sqlalchemy==1.4.31
@@ -52,6 +75,8 @@ sqlalchemy==1.4.31
     #   alembic
 starlette==0.17.1
     # via fastapi
+threadpoolctl==3.1.0
+    # via scikit-learn
 typing-extensions==4.1.1
     # via pydantic
 urllib3==1.26.8

@@ -1,8 +1,5 @@
 from fastapi import FastAPI
+from .handlers import router
 
 app = FastAPI()
-
-
-@app.get("/alive")
-async def get_alive():
-    return
+app.include_router(router)
